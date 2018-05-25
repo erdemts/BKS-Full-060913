@@ -1,0 +1,4 @@
+D:\Projects\BKS\BKSUSBDriver\bin\Debug\BKSUSBDriver.dll
+D:\Projects\BKS\BKSUSBDriver\bin\Debug\BKSUSBDriver.pdb
+D:\Projects\BKS\BKSUSBDriver\obj\Debug\BKSUSBDriver.dll
+D:\Projects\BKS\BKSUSBDriver\obj\Debug\BKSUSBDriver.pdb

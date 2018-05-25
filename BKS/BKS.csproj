@@ -1,0 +1,1261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2DADB3AE-F7E3-4D48-A41D-72F4AA582100}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BKS</RootNamespace>
+    <AssemblyName>BKS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Projects\BKS\publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>D:\Projects\BKS</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>BKS.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>BKSLogo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>96B73CA7294C7BBE8521FDDE7C808CA0ACFCD6BB</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>BKS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v11.2.Core, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v11.2.Win, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v11.2, Version=11.2.11.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackroundProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackroundProcess.Designer.cs">
+      <DependentUpon>BackroundProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\BKSDatabaseConfiguration.cs" />
+    <Compile Include="DataModel\Model\Alarm.cs" />
+    <Compile Include="DataModel\Model\Gorunum.cs" />
+    <Compile Include="DataModel\Model\LisansBilgi.cs" />
+    <Compile Include="DataModel\Model\Nobet.cs" />
+    <Compile Include="DataModel\Model\DevriyeNokta.cs" />
+    <Compile Include="DataModel\Model\Devriye.cs" />
+    <Compile Include="DataModel\Model\Enums.cs" />
+    <Compile Include="DataModel\Model\OkumaBilgisi.cs" />
+    <Compile Include="DataModel\Model\Operasyon.cs" />
+    <Compile Include="DataModel\Model\OperasyonNokta.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AnahtarForm\AnahtarEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AnahtarForm\AnahtarEdit.Designer.cs">
+      <DependentUpon>AnahtarEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AnahtarForm\AnahtarListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AnahtarForm\AnahtarListesi.Designer.cs">
+      <DependentUpon>AnahtarListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AlarmForm\AlarmEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AlarmForm\AlarmEdit.Designer.cs">
+      <DependentUpon>AlarmEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AlarmForm\AlarmListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\AlarmForm\AlarmListesi.Designer.cs">
+      <DependentUpon>AlarmListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GorunumForm\GorunumEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GorunumForm\GorunumEdit.Designer.cs">
+      <DependentUpon>GorunumEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GorunumForm\GorunumListesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GorunumForm\GorunumListesi.Designer.cs">
+      <DependentUpon>GorunumListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NobetForm\NobetEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NobetForm\NobetEdit.Designer.cs">
+      <DependentUpon>NobetEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NobetForm\NobetListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NobetForm\NobetListesi.Designer.cs">
+      <DependentUpon>NobetListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OperasyonForm\OperasyonEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OperasyonForm\OperasyonEdit.Designer.cs">
+      <DependentUpon>OperasyonEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OperasyonForm\OperasyonListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\OperasyonForm\OperasyonListesi.Designer.cs">
+      <DependentUpon>OperasyonListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OkumaBilgisiForm\OkumaBilgisiEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OkumaBilgisiForm\OkumaBilgisiEdit.Designer.cs">
+      <DependentUpon>OkumaBilgisiEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OkumaBilgisiForm\OkumaBilgisiListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\OkumaBilgisiForm\OkumaBilgisiListesi.Designer.cs">
+      <DependentUpon>OkumaBilgisiListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DevriyeForm\DevriyeEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DevriyeForm\DevriyeEdit.Designer.cs">
+      <DependentUpon>DevriyeEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DevriyeForm\DevriyeListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\DevriyeForm\DevriyeListesi.Designer.cs">
+      <DependentUpon>DevriyeListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForm\KullaniciEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForm\KullaniciEdit.Designer.cs">
+      <DependentUpon>KullaniciEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KullaniciForm\KullaniciListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\KullaniciForm\KullaniciListesi.Designer.cs">
+      <DependentUpon>KullaniciListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KalemForm\KalemEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\KalemForm\KalemEdit.Designer.cs">
+      <DependentUpon>KalemEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\KalemForm\KalemListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\KalemForm\KalemListesi.Designer.cs">
+      <DependentUpon>KalemListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OlayForm\OlayEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OlayForm\OlayEdit.Designer.cs">
+      <DependentUpon>OlayEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OlayForm\OlayListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\OlayForm\OlayListesi.Designer.cs">
+      <DependentUpon>OlayListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NoktaForm\NoktaEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\NoktaForm\NoktaEdit.Designer.cs">
+      <DependentUpon>NoktaEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\NoktaForm\NoktaListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\NoktaForm\NoktaListesi.Designer.cs">
+      <DependentUpon>NoktaListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ParametreForm\TarihParam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ParametreForm\TarihParam.Designer.cs">
+      <DependentUpon>TarihParam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonelForm\PersonelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonelForm\PersonelEdit.Designer.cs">
+      <DependentUpon>PersonelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PersonelForm\PersonelListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\PersonelForm\PersonelListesi.Designer.cs">
+      <DependentUpon>PersonelListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\CustomAttribute\UniqueValue.cs" />
+    <Compile Include="DataModel\DataExtension.cs" />
+    <Compile Include="DataModel\Model\Author.cs" />
+    <Compile Include="DataModel\BKSEntities.cs" />
+    <Compile Include="DataModel\CustomAttribute\IndexAttribute.cs" />
+    <Compile Include="DataModel\IEntity.cs" />
+    <Compile Include="DataModel\Model\Kalem.cs" />
+    <Compile Include="DataModel\Model\Anahtar.cs" />
+    <Compile Include="DataModel\Model\Nokta.cs" />
+    <Compile Include="DataModel\Model\Olay.cs" />
+    <Compile Include="DataModel\Model\Parametre.cs" />
+    <Compile Include="DataModel\Model\Personel.cs" />
+    <Compile Include="DataModel\Model\Kullanici.cs" />
+    <Compile Include="DevexLocalizer\CustomXtraBarLocalizer.cs" />
+    <Compile Include="Forms\SystemForm\InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SystemForm\InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SystemForm\RegisterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SystemForm\RegisterForm.Designer.cs">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\CyrptoTool.cs" />
+    <Compile Include="Helper\Extension.cs" />
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Helper\ImageHelper.cs" />
+    <Compile Include="Helper\PropertyName.cs" />
+    <Compile Include="Helper\ReadTagHelper.cs" />
+    <Compile Include="InfraStructure\BaseEntityList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InfraStructure\IEntityForm.cs" />
+    <Compile Include="InfraStructure\Parametre.cs" />
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Messages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Messages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\DataModel\DsTurRaporu.cs" />
+    <Compile Include="Reports\Core\IReportControl.cs" />
+    <Compile Include="Reports\Core\BaseReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reports\Core\BaseReportControl.Designer.cs">
+      <DependentUpon>BaseReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\PersonelNoktaRaporu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\PersonelNoktaRaporu.Designer.cs">
+      <DependentUpon>PersonelNoktaRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\NoktaRaporu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\NoktaRaporu.Designer.cs">
+      <DependentUpon>NoktaRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\OlayRaporu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\OlayRaporu.Designer.cs">
+      <DependentUpon>OlayRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\KontrolEdilmeyenNoktalarRaporu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\KontrolEdilmeyenNoktalarRaporu.Designer.cs">
+      <DependentUpon>KontrolEdilmeyenNoktalarRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\TurRaporu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportPanel\TurRaporu.Designer.cs">
+      <DependentUpon>TurRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WelcomeScreen.Designer.cs">
+      <DependentUpon>WelcomeScreen.cs</DependentUpon>
+    </Compile>
+    <Content Include="tr-TR\DevExpress.Data.v11.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr-TR\DevExpress.Utils.v11.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr-TR\DevExpress.XtraBars.v11.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr-TR\DevExpress.XtraEditors.v11.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr-TR\DevExpress.XtraGrid.v11.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr-TR\DevExpress.XtraLayout.v11.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr-TR\DevExpress.XtraNavBar.v11.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tr-TR\DevExpress.XtraPrinting.v11.2.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="BackroundProcess.resx">
+      <DependentUpon>BackroundProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AnahtarForm\AnahtarEdit.resx">
+      <DependentUpon>AnahtarEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AnahtarForm\AnahtarListesi.resx">
+      <DependentUpon>AnahtarListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AlarmForm\AlarmEdit.resx">
+      <DependentUpon>AlarmEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AlarmForm\AlarmListesi.resx">
+      <DependentUpon>AlarmListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GorunumForm\GorunumEdit.resx">
+      <DependentUpon>GorunumEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GorunumForm\GorunumListesi.resx">
+      <DependentUpon>GorunumListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NobetForm\NobetEdit.resx">
+      <DependentUpon>NobetEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NobetForm\NobetListesi.resx">
+      <DependentUpon>NobetListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OperasyonForm\OperasyonEdit.resx">
+      <DependentUpon>OperasyonEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OperasyonForm\OperasyonListesi.resx">
+      <DependentUpon>OperasyonListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OkumaBilgisiForm\OkumaBilgisiEdit.resx">
+      <DependentUpon>OkumaBilgisiEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OkumaBilgisiForm\OkumaBilgisiListesi.resx">
+      <DependentUpon>OkumaBilgisiListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DevriyeForm\DevriyeEdit.resx">
+      <DependentUpon>DevriyeEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DevriyeForm\DevriyeListesi.resx">
+      <DependentUpon>DevriyeListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForm\KullaniciEdit.resx">
+      <DependentUpon>KullaniciEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KullaniciForm\KullaniciListesi.resx">
+      <DependentUpon>KullaniciListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KalemForm\KalemEdit.resx">
+      <DependentUpon>KalemEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\KalemForm\KalemListesi.resx">
+      <DependentUpon>KalemListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OlayForm\OlayEdit.resx">
+      <DependentUpon>OlayEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OlayForm\OlayListesi.resx">
+      <DependentUpon>OlayListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NoktaForm\NoktaEdit.resx">
+      <DependentUpon>NoktaEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\NoktaForm\NoktaListesi.resx">
+      <DependentUpon>NoktaListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ParametreForm\TarihParam.resx">
+      <DependentUpon>TarihParam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonelForm\PersonelEdit.resx">
+      <DependentUpon>PersonelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PersonelForm\PersonelListesi.resx">
+      <DependentUpon>PersonelListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SystemForm\InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SystemForm\RegisterForm.resx">
+      <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Messages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Messages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Content Include="Image\ico_16_9101.gif" />
+    <Content Include="Image\ico_16_9102.gif" />
+    <Content Include="Reports\TurRaporu.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\OlayRaporu.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\NoktaRaporu.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\PersonelNoktaRaporu.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Reports\Core\BaseReportControl.resx">
+      <DependentUpon>BaseReportControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Reports\KontrolEdilmeyenNoktalarRaporu.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Reports\ReportPanel\PersonelNoktaRaporu.resx">
+      <DependentUpon>PersonelNoktaRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPanel\NoktaRaporu.resx">
+      <DependentUpon>NoktaRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPanel\OlayRaporu.resx">
+      <DependentUpon>OlayRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPanel\KontrolEdilmeyenNoktalarRaporu.resx">
+      <DependentUpon>KontrolEdilmeyenNoktalarRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ReportPanel\TurRaporu.resx">
+      <DependentUpon>TurRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WelcomeScreen.resx">
+      <DependentUpon>WelcomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\BKS.DataModel.Model.OkumaBilgisi.datasource" />
+    <None Include="Properties\DataSources\BKS.DataModel.Model.OperasyonNokta.datasource" />
+    <None Include="Properties\DataSources\BKS.Reports.DataModel.DsTurRaporu.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BKSLogo.ico" />
+    <Content Include="Image\16_sign.png" />
+    <Content Include="Image\BKSLogo.ico" />
+    <Content Include="Image\DeleteView.gif" />
+    <Content Include="Image\Delete_10.png" />
+    <Content Include="Image\Delete_16.png" />
+    <Content Include="Image\device_sync.png" />
+    <Content Include="Image\ico_16_4400.gif" />
+    <Content Include="Image\ico_24_upd_logref.png" />
+    <Content Include="Image\ico_32_file_export.png" />
+    <Content Include="Image\ico_32_file_import.png" />
+    <Content Include="Image\device_not_connect.png" />
+    <Content Include="Image\device_connect.png" />
+    <Content Include="Image\device_invalid.png" />
+    <Content Include="Image\ObjetdockSZ.jpg" />
+    <Content Include="Image\OkumaEslestirme.png" />
+    <Content Include="Image\QuickFind_32.png" />
+    <Content Include="Image\btn_off_lookup.png" />
+    <Content Include="Image\ico_16_4002.gif" />
+    <Content Include="Image\ico_16_4700.gif" />
+    <Content Include="Image\ico_16_7100.gif" />
+    <Content Include="Image\ico_16_9508.png" />
+    <Content Include="Image\ico_18_1200.png" />
+    <Content Include="Image\ico_18_8.gif" />
+    <Content Include="Image\ico_18_op.gif" />
+    <Content Include="Image\ico_16_okuma.gif" />
+    <Content Include="Image\ico_18_2.gif" />
+    <Content Include="Image\ico_18_4201.gif" />
+    <Content Include="Image\info_16.gif" />
+    <Content Include="Image\Find_32.png" />
+    <Content Include="Image\Find_16.png" />
+    <Content Include="Image\Delete_32.png" />
+    <Content Include="Image\lookup.gif" />
+    <Content Include="Image\Move\right.gif" />
+    <Content Include="Image\Move\left.gif" />
+    <Content Include="Image\Move\up.gif" />
+    <Content Include="Image\Move\down.gif" />
+    <Content Include="Image\New_16.png" />
+    <Content Include="Image\New_32.png" />
+    <Content Include="Image\Open_16.png" />
+    <Content Include="Image\Open_32.png" />
+    <Content Include="Image\Print_32.png" />
+    <Content Include="Image\Refresh_32.png" />
+    <Content Include="Image\ico_16_dev.png" />
+    <Content Include="Image\Save.png" />
+    <Content Include="Image\SavedView_16.png" />
+    <Content Include="Image\SavedView_32.png" />
+    <Content Include="Image\schedule_32.png" />
+    <Content Include="Image\search.png" />
+    <Content Include="Image\ico_24_puantaj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BKSUSBDriver\BKSUSBDriver.csproj">
+      <Project>{cac9a4b0-06f4-4fe4-ac28-59083422af4d}</Project>
+      <Name>BKSUSBDriver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.4.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 4.0 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="DevExpress.RichEdit.v11.2.Core">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\16_sign.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\BKSLogo.ico">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\btn_off_lookup.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\DeleteView.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Delete_10.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Delete_16.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Delete_32.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\device_connect.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\device_invalid.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\device_not_connect.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\device_sync.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Find_16.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Find_32.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_16_4002.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_16_4400.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_16_4700.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_16_7100.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_16_9101.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_16_9102.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_16_9508.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_16_dev.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_16_okuma.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_18_1200.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_18_2.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_18_4201.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_18_8.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_18_op.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_24_puantaj.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_24_upd_logref.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_32_file_export.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ico_32_file_import.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\info_16.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\lookup.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Move\down.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Move\left.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Move\right.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Move\up.gif">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\New_16.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\New_32.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\ObjetdockSZ.jpg">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\OkumaEslestirme.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Open_16.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Open_32.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Print_32.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\QuickFind_32.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Refresh_32.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\Save.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\SavedView_16.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\SavedView_32.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\schedule_32.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Image\search.png">
+      <Visible>False</Visible>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Data.SqlServerCe">
+      <Visible>False</Visible>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
